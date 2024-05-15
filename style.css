@@ -2,6 +2,7 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 @media only screen and (max-width: 1138px) {
   .first {
     width: 75%;
@@ -29,7 +30,10 @@
 }
 body {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .first h1 {
   font-size: 36px;
   font-weight: 700;
@@ -79,6 +83,32 @@ body {
   margin-bottom: 0px;
 }
 img {
-    background-color: rgb(249, 250, 251);
-    border-radius: 10px;
+  background-color: rgb(249, 250, 251);
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"] {
+  border: solid 1px rgb(229, 231, 235);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+}
+.mini-box {
+  display: flex;
+}
+.third {
+    margin-top: 32px;
+    width: 532px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.third h3 {
+    font-size: 30px;
+}
+.third p {
+    color: rgb(107, 114, 128);
 }
